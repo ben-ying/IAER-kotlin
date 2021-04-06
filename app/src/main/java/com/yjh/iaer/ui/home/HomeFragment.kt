@@ -4,28 +4,33 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.yjh.iaer.R
+import androidx.navigation.fragment.findNavController
+import com.yjh.iaer.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private val homeViewModel: HomeViewModel by lazy {
+        ViewModelProvider(this).get(HomeViewModel::class.java)
+    }
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
-    ): View? {
-        homeViewModel =
-                ViewModelProvider(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
+    ): View {
+        val binding = FragmentHomeBinding.inflate(inflater)
+        binding.viewModel = homeViewModel
+        homeViewModel.loginUser.observe(viewLifecycleOwner, { loginUser ->
+            if (loginUser != null) {
+                Toast.makeText(context, "Show list", Toast.LENGTH_SHORT).show()
+            } else {
+                findNavController().navigate(HomeFragmentDirections.actionNavHomeToLoginFragment())
+            }
         })
-        return root
+
+        return binding.root
     }
 }
