@@ -1,13 +1,158 @@
 <resources>
-    <string name="app_name">IAER</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_name">收支</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--login-->
+    <string name="username_or_email">用户名/电子邮箱</string>
+    <string name="password">密码</string>
+    <string name="forgot_password_title">忘记密码</string>
+    <string name="forgot_password">忘记密码？</string>
+    <string name="no_account_yet_create_one">还没有账号？创建</string>
+    <string name="login">登入</string>
+    <string name="empty_email">Email不能为空</string>
+    <string name="empty_password">密码不能为空</string>
+    <string name="invalid_email">邮箱格式不正确</string>
+    <string name="invalid_password">密码长度至少需要6位</string>
+    <string name="invalid_confirm_password">2次密码输入不一致</string>
+    <string name="empty_username">用户名不能为空</string>
+    <string name="logout">登出账号</string>
+    <string name="logout_message">您确定要退出当前账号吗？</string>
+    <string name="reset_password">重设密码</string>
+    <string name="add_photo">添加头像</string>
+    <string name="username">用户名</string>
+    <string name="edit_baby_name">编辑宝宝名</string>
+    <string name="email">电子邮箱</string>
+    <string name="edit_email">编辑电子邮箱</string>
+    <string name="phone">手机号码</string>
+    <string name="edit_phone">编辑手机号码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="create_account">创建账号</string>
+    <string name="already_a_member_and_login">已经有账号？登入</string>
+    <string name="dialog_forgot_password">请输入你的电子邮箱，我们将发送给你验证码以重设密码</string>
+    <string name="enter_verify_code">请输入验证码</string>
+    <string name="enter_password">请输入密码</string>
+    <string name="enter_confirm_password">请再次输入密码</string>
+    <string name="resend">重新发送</string>
+    <string name="change_password">更改密码</string>
+    <string name="click_resend_verify_code">点击重新发送验证码</string>
+    <string name="sent_verify_code_message">验证码已发送到你的邮箱，请查收</string>
+    <string name="countdown_resend_message">%d秒后重新发送</string>
+    <string name="empty_verify_code">验证码不能为空</string>
+    <string name="reset_password_success">密码修改成功</string>
+
+
+    <string name="action_settings">设置</string>
+    <string name="action_sorted_by_date">按日期显示</string>
+    <string name="action_sorted_by_amount">按金额显示</string>
+    <string name="action_sorted_by_category">按种类显示</string>
+    <string name="action_sort">排序</string>
+    <string name="category_others">其它交易</string>
+    <string name="percentage">%.2s%</string>
+
+    <string name="add_transaction">添加交易记录</string>
+    <string name="transaction_detail">交易记录</string>
+    <string name="transaction_remark">备注</string>
+    <string name="transaction_from">交易来自于</string>
+    <string name="transaction_money">交易金额(元)</string>
+    <string name="transaction_total">%1$,d个交易，总计%2$,d(元)</string>
+    <string name="transaction_yuan">%,d, %s</string>
+    <string name="delete_transaction_alert">点击确定将永久删除此交易记录，是否确定删除？</string>
+    <string name="hint_money">金额</string>
+    <string name="hint_remark">备注</string>
+    <string name="menu_add">添加</string>
+    <string name="money_income">收入：%d</string>
+    <string name="money_expenditure">支出：%d</string>
+    <string name="income">收入：%s</string>
+    <string name="input">收入</string>
+    <string name="output">支出</string>
+    <string name="expenditure">支出：%s</string>
+    <string name="current_income">当前收入：%s</string>
+    <string name="current_expenditure">当前支出：%s</string>
+    <string name="this_month_income">本月收入：%s</string>
+    <string name="this_month_expenditure">本月支出：%s</string>
+    <string name="this_year_income">今年收入：%s</string>
+    <string name="this_year_expenditure">今年支出：%s</string>
+    <string name="surplus">结余：%s</string>
+    <string name="category">来自：%s</string>
+    <string name="remark">备注：%s</string>
+
+    <!--home-->
+    <string name="home_statistics_label">首页统计</string>
+    <string name="show_current">显示当前</string>
+    <string name="show_this_month">显示本月</string>
+    <string name="show_this_year">显示今年</string>
+    <!--fund-->
+    <string name="fund_label">额度设置</string>
+    <string name="monthly_money">每月额度</string>
+    <string name="yearly_money">每年额度</string>
+
+
+    <string name="list">列表</string>
+    <string name="chart">统计</string>
+    <string name="chart_month">%1$d年%2$d月</string>
+    <string name="chart_year">%d年</string>
+    <string name="no_data">没有收支记录</string>
+    <string name="summary">总收入%1$s，总支出%2$s，结余%3$s</string>
+
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="prompt">提示</string>
+    <string name="edit">编辑</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="confirm">确定</string>
+    <string name="non_empty_field">输入框不能为空</string>
+    <string name="network_error">网络错误！</string>
+    <string name="permission_not_granted">必须同意相关权限才能使用！</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="select_all">选择所有</string>
+    <string name="by_year">年份</string>
+    <string name="by_month">月份</string>
+    <string name="by_category">类别</string>
+    <string name="by_money">金额</string>
+    <string name="filter">筛选</string>
+    <string name="filter_by_date">按日期筛选</string>
+    <string name="filter_by_category">按类别筛选</string>
+    <string name="filter_by_money">按金额筛选</string>
+    <string name="filter_by_all">综合筛选</string>
+    <string name="load_all">已全部加载完</string>
+    <string name="income_all_title">已全部加载完</string>
+    <string name="expenditure_all_title">已全部加载完</string>
+    <string name="min_money">最低金额</string>
+    <string name="max_money">最高金额</string>
+    <string name="modifies_not_saved">修改还未保存，是否保存完再离开?</string>
+    <string name="all">全部</string>
+    <string name="all_money_gte">所有%1$s支出金额大于%2$d</string>
+    <string name="month_money_gte">%1$d年%2$d月%3$s支出金额大于%4$d</string>
+    <string name="year_money_gte">%1$d年%2$s支出金额大于%3$d</string>
+    <string name="select_money">选择金额</string>
+    <string name="select_money_error_message">金额必须大于100</string>
+    <string name="percentage_of_current">, 占当前类型的%s</string>
+
+    <!--app menu-->
+    <string name="others">其它</string>
+    <string name="switch_account">账号切换</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="app_version">当前版本：%s，版本号：%d</string>
+    <string name="latest_version">最新版本：%s，版本号：%d</string>
+    <string name="update_button">下载并更新</string>
+    <string name="latest_version_prompt">目前已经是最新版本了。</string>
+    <string name="download_notification_description">正在下载收支&#8230;</string>
+    <string name="delete_user_history_alert">点击确定将永久删除此账号记录，是否确定删除？</string>
+    <string name="latest_version_found">有新版本(%s)可以更新</string>
+    <string name="update">更新</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

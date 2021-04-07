@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="none">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_list_black_24dp"
+            android:title="@string/list" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:icon="@mipmap/ic_multiline_chart_black_24dp"
+            android:title="@string/chart" />
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Slideshow" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
     </group>
+
+    <item android:title="@string/others">
+        <menu>
+            <item
+                android:id="@+id/nav_accounts"
+                android:icon="@mipmap/ic_account_box_black_24dp"
+                android:title="@string/switch_account" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@mipmap/ic_settings_black_24dp"
+                android:title="@string/setting" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@mipmap/ic_information_black_24dp"
+                android:title="@string/about" />
+        </menu>
+    </item>
+
 </menu>

@@ -23,6 +23,7 @@ class HomeFragment : Fragment() {
     ): View {
         val binding = FragmentHomeBinding.inflate(inflater)
         binding.viewModel = homeViewModel
+        binding.lifecycleOwner = this
         homeViewModel.loginUser.observe(viewLifecycleOwner, { loginUser ->
             if (loginUser != null) {
                 Toast.makeText(context, "Show list", Toast.LENGTH_SHORT).show()

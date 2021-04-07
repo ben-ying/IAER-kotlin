@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fragment_options">
+        <item>列表</item>
+        <item>统计</item>
+    </string-array>
+
+    <string-array name="chart_options">
+        <item>按月</item>
+        <item>按年</item>
+        <item>全部</item>
+<!--        <item>总结</item>-->
+    </string-array>
+
+    <string-array name="chart_summary_type_options">
+        <item>按月显示</item>
+        <item>按年显示</item>
+    </string-array>
+
+    <string-array name="transaction_category_options">
+        <item>请选择类型</item>
+        <item>生活用品</item>
+        <item>服饰</item>
+        <item>餐饮</item>
+        <item>孩子</item>
+        <item>装修</item>
+        <item>其它</item>
+        <item>收入</item>
+    </string-array>
+
+    <string-array name="transaction_type_options">
+        <item>支出</item>
+        <item>收入</item>
+    </string-array>
+
+    <string-array name="setting_options">
+        <item>首页设置</item>
+        <item>额度设置</item>
+    </string-array>
+</resources>
